@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>💸 My Budget</title>
+  </head>
+  <body>
+    <header>
+        <img src="img/bill.png" class="headerImg">
+        <h1 class="title">Budget ...what's that?</h1>
+    <header>
+  <section class="content card shadow rounded">
+        <h3 class="second-title">Add a new item: </h3>
+        <div class="form row">
+            <form id="exp-Form" autocomplete="off">
+               <div class="row">
+          <div class="col">
+            <div class="form-line left">
+              <span for="type">Type:</span>
+              <select id="type">
+                <option value="chooseOne">choose one...</option>
+                <option value="card">💳 Card</option>
+                <option value="cash">💵 Cash</option>
+                <option value="cryptocoin">📀 Cryptocoin</option>
+                <option value="cther">💰 Other</option>
+              </select>
+          </div>
+          <br/>
+          <div class="form-line left">
+            <span for="date">Date:</span>
+            <input type="date" id="date">
+          </div>
+          </div>
+        <div class="col">
+         <div class="form-line right">
+          <span for="name">Name:</span>
+          <input type="text" id="name">
+        </div>
+        <div class="form-line right">
+            <span for="amount">Amount:</span>
+            <input type="text" id="amount">
+          </div>
+                <button type="submit" class="button-save">Add Expense</button>
+
+        </div>
+        </div>
+    </form>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+              </thead>
+          <tbody id="expenseTable">
+                <tr>
+                    <td colspan="10">No expense items yet! go spend some $</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <a
+          target="_blank"
+          class="source-link"
+          href="https://www.instagram.com/merseyburr/"
+          ><img src="img/creator.jpg" class="footer-icon bouncy" />
+      </a>
+      <br />
+         <small
+        >Open-source code on GitHub, by
+        <a
+          target="_blank"
+          class="source-link"
+          href="https://github.com/Mersey94/first-repository"
+          >Mersey</a
+        ></small>
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+</html>
